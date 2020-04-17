@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
 	<meta charset="UTF-8">
 	<title>登录框</title>
+	<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> <!--导入jquery-->
 	<style>
 		*{
 			margin: 0px;
@@ -84,18 +85,18 @@
 			<form action="#">
 				<div class="form-group">
 					<label for="">用户名：</label>
-					<input type="text" class="form-input">
+					<input type="text" class="form-input" name="user">
 				</div>
 			</form>
 			<form action="#">
 				<div class="form-group">
 					<label for="">密&nbsp;&nbsp;&nbsp;码：</label>
-					<input type="password" class="form-input">
+					<input type="password" class="form-input" name="password">
 				</div>
 			</form>
 			<div class="btn">
-				<input type="button" value="登陆" class="form-btn form-btn-primary">
-				<input type="button" value="注册" class="form-btn form-btn-warning">
+				<input type="button" value="登陆" class="form-btn form-btn-primary" id="login_btn">
+				<input type="button" value="注册" class="form-btn form-btn-warning" id="signup_btn">
 			</div>
 		</div>
 		<div class="footer">
@@ -104,16 +105,25 @@
 	</div>
 </body>
 <script>
+	/*设置登录框在窗口的位置*/
 	obj = document.getElementById('container');
 	cWidth = window.innerWidth;
 	cHeight = window.innerHeight;
 	obj.style.marginLeft = (cWidth - 380)/2+"px";
 	obj.style.marginTop = (cHeight - 300)/2+"px";
+	/*当窗口改变时重置位置*/
 	window.onresize=function(){  
 	                cWidth = window.innerWidth;
 					cHeight = window.innerHeight;
 					obj.style.marginLeft = (cWidth - 380)/2+"px";
 					obj.style.marginTop = (cHeight - 300)/2+"px"; 
-	            } 
+	            }
+	//自定义登录名为tom，密码为123456
+
+    $('#login_btn').click(function () {
+		//console.log("登录点击事件");
+		//获取输入框内容，并判断
+
+    });
 </script>
 </html>

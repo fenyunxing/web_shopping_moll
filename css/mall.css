@@ -6,7 +6,7 @@
 	.nav{
 		width: 100%;
 		height: 35px;
-		background-color: #E3E4E5;
+		background-color: #DDDDDD;
 	}
 	.nav ul{
 		list-style: none;
@@ -15,22 +15,22 @@
 		color: #999999;
 	}
 	.nav li{
-		line-height: 35px;
+		line-height: 35px; /*垂直居中*/
 		margin-right: 15px;
 		font-weight: bold;
-		cursor: pointer;
-		float: right;
+		cursor: pointer;  /*设置光标形状为手*/
+		float: right; /*设置所有的Li又浮动*/
 	}
 	.nav a{
 		text-decoration: none;
-		color: #999999;
+		color: #444444;
 		padding-left: 15px;
-		border-left: 1px solid #ccc;
+		border-left: 1px solid #888888;
 	}
 	.nav a:hover{
 		color: #D9534F;
 	}
-	.nav li:first-child{		
+	.nav li:first-child{	/*设置第一个li左浮动**/
 		float: left;
 	}
 	.login-signup a{
@@ -42,7 +42,7 @@
 		padding-right: 8px;
 	}
 	.nav-pull-down-action{
-		background-color: #fff;
+		background-color: #d9edf7; /*悬停时列表项的块背景*/
 	}
 /*****************************头部导航结束*****************************/
 
@@ -120,7 +120,7 @@
 		height: 485px;
 		margin: 0px auto;
 	}
-	.nav-side{
+	.nav-side{  /*设置左侧导航栏容器*/
 		width: 200px;
 		height: 100%;
 		padding: 0px;
@@ -571,7 +571,7 @@
 		color: #999;
 		position: absolute;
 		background-color: #fff;
-		box-shadow: 0px 5px 15px #ccc;
+		box-shadow: 0px 5px 15px #ccc;  /*设置容器阴影*/
 		display: none;
 	}
 	.city-item{

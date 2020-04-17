@@ -13,13 +13,13 @@
 	<!-- 顶部导航条 -->
 	<div class="nav">
 		<ul>
-			<li class="nav-pull-down location"><img src="img/icon_location.png"> 珠海</li>
+			<li class="nav-pull-down location"><img src="img/icon_location.png"> <span id="cityselect">珠海</span></li>
 			<li><a href="#">手机商城</a></li>
 			<li><a href="#">网站导航</a></li>
 			<li><a href="help.html">客户服务</a></li>
 			<li><a href="#">企业采购</a></li>
 			<li><a href="#">商城会员</a></li>
-			<li class="nav-pull-down my-shop"><a href="#">我的商城</a> <span class="glyphicon glyphicon-menu-down"></span></li>
+			<li class="nav-pull-down my-shop"><a href="#">我的商城</a> <span class="glyphicon glyphicon-menu-down"></span></li> <!--span标签里引用bootstap库里的下拉箭头-->
 			<li class="login-signup">你好，请<a href="login.html">登录 </a><span class="text-color-red"><a href="signup.html">免费注册</a></span></li>
 		</ul>
 	</div>
@@ -91,7 +91,7 @@
 					<div class="prev prevNext" onclick="PrevNextClick(1)"> <span class="glyphicon glyphicon-menu-left"></span> </div>
 					<div class="next prevNext" onclick="PrevNextClick(2)"> <span class="glyphicon glyphicon-menu-right"></span> </div>
 				</div>
-				<div class="nav-show">
+				<div class="nav-show">   <!--轮播图下的两张图片--->
 					<div class="nav-show-img"><img src="img/nav_showimg1.jpg"></div>
 					<div class="nav-show-img"><img src="img/nav_showimg2.jpg"></div>
 				</div>
@@ -344,7 +344,7 @@
 							<div class="item-four-detail">
 								<div class="item-four-detail-text">
 									<p class="pt_bi_tit pt_bi_tit-eat">休闲零食</p>
-									<p class="pt_bi_promo"满99减40</p>
+									<p class="pt_bi_promo">满99减40</p>
 								</div>
 								<div class="item-four-detail-img">
 									<img src="img/item-eat-1-4.jpg" alt="">

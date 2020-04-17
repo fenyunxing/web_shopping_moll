@@ -1,18 +1,28 @@
 //当鼠标放在导航条上时
 //在地址上
 $('.location,.city').hover(
+	//鼠标进入时执行函数
 	function() {
-		var locatOffset = $('.location').offset();
-		$('.city').show();
+		var locatOffset = $('.location').offset();  //获取当前元素偏移量
+		$('.city').show(); //显示城市面板类
+		//设置显示位置
 		$('.city').css('left', locatOffset.left + "px");
 		$('.city').css('top', (locatOffset.top+35) + "px");
-		$('.location').addClass("nav-pull-down-action");
+		$('.location').addClass("nav-pull-down-action"); //给悬停的控件增加一个属性类
+
 	},
+	//鼠标移出时执行函数
 	function(){
 		$('.city').hide();
 		$('.location').removeClass("nav-pull-down-action");
 	}
 );
+//城市点击事件
+$('.city-item').click(function(){
+	var city = $(this).html();
+   // console.log(typeof city);
+	$('#cityselect').html(city);
+});
 
 //在我的商城上
 $('.my-shop,.my-shop-panel').hover(
@@ -22,11 +32,11 @@ $('.my-shop,.my-shop-panel').hover(
 		$('.my-shop-panel').css('left', locatOffset.left + "px");
 		$('.my-shop-panel').css('top', (locatOffset.top+35) + "px");
 		$('.my-shop').addClass("nav-pull-down-action");
-		$('.my-shop').children('a').css("border-left", "1px solid #fff");
+		$('.my-shop').children('a').css("border-left", "none"); //移入时取消a标签左边的竖线
 	},
 	function(){
 		$('.my-shop-panel').hide();
-		$('.my-shop').children('a').css("border-left", "1px solid #ccc");
+		$('.my-shop').children('a').css("border-left", "1px solid #888888");//移出时设置a标签左边的竖线
 		$('.my-shop').removeClass("nav-pull-down-action");
 	});
 
